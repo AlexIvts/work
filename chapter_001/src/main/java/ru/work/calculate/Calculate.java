@@ -4,7 +4,7 @@ package ru.work.calculate;
 * Class Класс для вычисления арифметических операций 
 * @author Alex Ivts
 * @since 28.03.2019
-* @vercion 1
+* @version 1
 
 */
 public class Calculate{
