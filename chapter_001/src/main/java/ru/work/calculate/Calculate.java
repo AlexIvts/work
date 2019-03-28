@@ -11,7 +11,7 @@ public class Calculate{
 	
 	/**
 	* Конструктор, вывод строки в консоль.
-	* @param name args
+	* @param args - args.
 	*/
 	public static void main(String[] args){
 		System.out.println("Hello");
