@@ -16,4 +16,13 @@ public class Calculate{
 	public static void main(String[] args){
 		System.out.println("Hello");
 	}
+	
+	/**
+	 * Method echo.
+	 * @param name - name.
+	 * @return Echo plus name.
+	 */
+	 public String echo(String name) {
+		return "Echo, echo, echo : " + name;
+	 }
 }
