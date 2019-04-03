@@ -26,4 +26,51 @@ public class CalculateTest {
 		assertThat(result, is(expect));
 	 }
 
+	@Test
+	public void whenAddOnePlusOneThenTwo()  {
+		Calculate calc = new Calculate();
+		double result = calc.add(1D, 1D);
+		double expected = 2D;
+		assertThat(result, is(expected));
+	}
+
+	@Test
+	public void whenDiv2On2Then1()  {
+		Calculate calc = new Calculate();
+		double result = calc.div(2D, 2D);
+		double expected = 1D;
+		assertThat(result, is(expected));
+	}
+
+	@Test
+	public void whenDiv1On0ThenPositiveInfinity()  {
+		Calculate calc = new Calculate();
+		double result = calc.div(1D, 0D);
+		double expected = Double.POSITIVE_INFINITY;
+		assertThat(result, is(expected));
+	}
+
+	@Test
+	public void whenDiv0On0ThenNaN()  {
+		Calculate calc = new Calculate();
+		double result = calc.div(0D, 0D);
+		double expected = Double.NaN;
+		assertThat(result, is(expected));
+	}
+
+	@Test
+	public void whenSub2Minus1Then1()  {
+		Calculate calc = new Calculate();
+		double result = calc.sub(2D, 1D);
+		double expected = 1D;
+		assertThat(result, is(expected));
+	}
+
+	@Test
+	public void whenMult2On2Then4()  {
+		Calculate calc = new Calculate();
+		double result = calc.mult(2D, 2D);
+		double expected = 4D;
+		assertThat(result, is(expected));
+	}
 }
